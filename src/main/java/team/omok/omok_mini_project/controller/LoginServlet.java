@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("loginUser", user);
 
-            response.sendRedirect("/lobby");
+            response.sendRedirect("/omok/lobby/");
 
         } catch (IllegalArgumentException e) {
             request.setAttribute("error", e.getMessage());
